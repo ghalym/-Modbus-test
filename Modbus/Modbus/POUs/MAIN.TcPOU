@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4022.18">
+  <POU Name="MAIN" Id="{7bbf0460-3de1-4d39-9a4c-ffbbff143741}" SpecialFunc="None">
+    <Declaration><![CDATA[PROGRAM MAIN
+VAR
+	test:FB_GaugeModbus;
+	
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[test(IP:='172.21.84.44',nMBAddr:=2048(*8#4000*),iBitOffset:=24);
+]]></ST>
+    </Implementation>
+  </POU>
+</TcPlcObject>
